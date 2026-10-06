@@ -1,6 +1,5 @@
 import pygame
 
-
 # Base class for game objects
 class CircleShape(pygame.sprite.Sprite):
     containers: tuple[pygame.sprite.Group, ...]
@@ -17,9 +16,8 @@ class CircleShape(pygame.sprite.Sprite):
         self.radius = radius
 
     def draw(self, screen: pygame.Surface) -> None:
-        # must override
         pass
+        
 
     def update(self, dt: float) -> None:
-        # must override
         pass
