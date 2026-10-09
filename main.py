@@ -13,6 +13,7 @@ def main():
     dt = 0.0
     the_player = Player(SCREEN_WIDTH / 2,SCREEN_HEIGHT / 2)
     while True:
+        the_player.update(dt)
         screen.fill('black')   
         the_player.draw(screen)
         pygame.display.flip()
