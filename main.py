@@ -40,7 +40,7 @@ def main():
                   if shot.collides_with(asteriod):
                        log_event("asteroid_shot")
                        shot.kill()
-                       asteriod.kill()
+                       asteriod.split()
                   
         screen.fill('black')   
         for drawing in drawable:
